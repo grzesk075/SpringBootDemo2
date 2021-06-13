@@ -1,20 +1,14 @@
 package pl.grzesk075.springbootdemo2.excel.controller;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import pl.grzesk075.springbootdemo2.excel.dao.Sheet;
+import pl.grzesk075.springbootdemo2.excel.dto.Sheet;
 import pl.grzesk075.springbootdemo2.excel.model.ExcelViewer;
 
 @Component
 public class ExcelViewerMainComponent {
 
-    public ExcelViewerMainComponent() {
-        System.out.println("ExcelViewerMainComponent created.");
-    }
-
     @Bean
-    @Scope("singleton")
     public Sheet mainSheet() {
         return new Sheet("Main Sheet Title");
     }

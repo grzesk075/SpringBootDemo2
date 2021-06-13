@@ -1,7 +1,7 @@
 package pl.grzesk075.springbootdemo2.excel.model;
 
 
-import pl.grzesk075.springbootdemo2.excel.dao.Sheet;
+import pl.grzesk075.springbootdemo2.excel.dto.Sheet;
 
 public class ExcelViewer {
     private Sheet sheet;

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import pl.grzesk075.springbootdemo2.excel.model.ExcelViewer;
 
 @Controller
-public class ExcelViewerRestController {
+public class ExcelViewerController {
 
     @Autowired
     private ExcelViewer excelViewerModel;

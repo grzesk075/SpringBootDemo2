@@ -1,4 +1,4 @@
-package pl.grzesk075.springbootdemo2.excel.dao;
+package pl.grzesk075.springbootdemo2.excel.dto;
 
 public class Sheet {
     private String title;
