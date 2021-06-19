@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REST javascript client page example</title>
+    <script>
+        let mainSheet;
+
+        function getMainSheet() {
+            fetch("/rest/mainSheet")
+            .then(rsp => rsp.json())
+            .then(json => mainSheet = json)
+            .then(() => setTitle());
+        }
+
+        function setTitle() {
+            document.getElementById("title").innerText = mainSheet.title;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Get main sheet" onclick="getMainSheet()"/>
+    <p id="title"/>
+</body>
+</html>
