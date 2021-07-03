@@ -6,7 +6,7 @@
 </head>
 <body>
     <p th:text="'Title: ' + ${title} + ' .'" />
-    <form>
+    <form action="#" th:action="@{/viewer}" th:object="${formdata}" method="post">
         <table>
             <tbody>
                 <tr>
@@ -19,7 +19,7 @@
                 </tr>
             </tbody>
         </table>
-        <input type="text" value="abc"/>
+        <input type="text" th:field="*{newTitle}"/>
         <input type="submit" value="OK"/>
     </form>
 </body>
