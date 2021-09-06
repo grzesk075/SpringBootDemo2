@@ -1,4 +1,4 @@
-package pl.grzesk075.springbootdemo2.sandbox.soap;
+package pl.grzesk075.springbootdemo2.sandbox.soap.endpoint;
 
 import io.spring.guides.gs_producing_web_service.GetCountryRequest;
 import io.spring.guides.gs_producing_web_service.GetCountryResponse;

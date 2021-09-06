@@ -1,4 +1,4 @@
-package pl.grzesk075.springbootdemo2.sandbox.soap;
+package pl.grzesk075.springbootdemo2.sandbox.soap.endpoint;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
